@@ -23,7 +23,7 @@ class School
   end
   
   def sort
-    self.roster.values.flatten.sort
+    self.roster.values.sort
   end
   
 end
