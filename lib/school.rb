@@ -1,8 +1,5 @@
 class School
-  
   attr_reader :name
-  
-  
   
   def initialize(name)
     @name = name
@@ -14,7 +11,7 @@ class School
   end
   
   def add_student(name, grade)
-    if self.roster[grade] == nil 
+    if self.roster[grade] == nil
       self.roster[grade] = [name]
     else
       self.roster[grade] << name
@@ -23,6 +20,10 @@ class School
   
   def grade(grade)
     self.roster[grade]
+  end
+  
+  def sort
+    
   end
   
 end
