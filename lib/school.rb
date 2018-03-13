@@ -15,7 +15,7 @@ class School
   
   def add_student(name, grade)
     if self.roster[grade] == nil 
-      self.roster[grade] = []
+      self.roster[grade] = [name]
     else
       self.roster[grade] << name
     end
